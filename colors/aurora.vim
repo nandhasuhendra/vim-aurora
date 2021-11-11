@@ -73,6 +73,7 @@ let s:none   = "NONE"
 let s:underline = 'underline'
 let s:undercurl = 'undercurl'
 let s:bold = 'bold'
+let s:italic = 'italic'
 let s:inverse = 'inverse'
 let s:reverse = 'reverse'
 
@@ -132,7 +133,7 @@ call s:HL('FoldColumn', s:accent_5, s:none, s:none)
 call s:HL('SignColumn', s:none, s:none, s:none)
 " call s:HL('Incsearch', s:none, s:none, s:none)
 
-call s:HL('LineNr', s:accent_4, s:none, s:none)
+call s:HL('LineNr', s:accent_4, s:none, s:bold)
 call s:HL('CursorLineNr', s:yellow, s:none, s:none)
 call s:HL('MatchParen', s:accent_2, s:purple, s:none)
 call s:HL('ModeMsg', s:green, s:none, s:none)
@@ -174,18 +175,19 @@ call s:HL('WildMenu', s:accent_2, s:yellow, s:none)
 " Generic Syntax: (see :help group-name)
 " ----------------------------------------------------------------------------
 
-call s:HL('Comment', s:accent_5, s:none, s:none)
+call s:HL('Keyword', s:accent_5, s:none, s:italic)
+call s:HL('Comment', s:accent_5, s:none, s:italic)
 
-call s:HL('Constant', s:red, s:none, s:none)
-call s:HL('String', s:green, s:none, s:none)
+call s:HL('Constant', s:red, s:none, s:bold)
+call s:HL('String', s:green, s:none, s:italic)
 "   Character"
 "   Number"
 "   Boolean"
 "   Float"
 
-call s:HL('Identifier', s:purple, s:none, s:none)
-call s:HL('Function', s:yellow, s:none, s:none)
-call s:HL('Statement', s:blue, s:none, s:none)
+call s:HL('Identifier', s:purple, s:none, s:italic)
+call s:HL('Function', s:yellow, s:none, s:bold)
+call s:HL('Statement', s:blue, s:none, s:italic)
 "   Conditional"
 "   Repeat"
 "   Label"
