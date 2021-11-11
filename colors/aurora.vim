@@ -192,12 +192,11 @@ call s:HL('Statement', s:blue, s:none, s:italic)
 "   Repeat"
 "   Label"
 call s:HL('Operator', s:aqua, s:none, s:none)
-"   Keyword"
 "   Exception"
 
 call s:HL('PreProc', s:aqua, s:none, s:none)
+call s:HL('Define', s:aqua, s:none, s:italic)
 "   Include"
-"   Define"
 "   Macro"
 "   PreCondit"
 
